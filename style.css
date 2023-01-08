@@ -185,7 +185,7 @@ a:active { text-decoration: none; }
   /*email*/
   .email {
     background: none;
-    background-image: url("email_icon.png");
+    background-image: url("Assets/email_icon.png");
     background-size: cover;
     height: 40px;
     width: 40px;
@@ -202,7 +202,7 @@ a:active { text-decoration: none; }
     content: attr(data-item);
     transition: 0.5s;
     background: none;
-    background-image: url("email_purple.png");
+    background-image: url("Assets/email_purple.png");
     background-size: cover;
     height: 40px;
     width: 40px;
@@ -225,7 +225,7 @@ a:active { text-decoration: none; }
     /*email*/
   .email {
     background: none;
-    background-image: url("email_icon.png");
+    background-image: url("Assets/email_icon.png");
     background-size: cover;
     height: 40px;
     width: 40px;
@@ -242,7 +242,7 @@ a:active { text-decoration: none; }
     content: attr(data-item);
     transition: 0.5s;
     background: none;
-    background-image: url("email_purple.png");
+    background-image: url("Assets/email_purple.png");
     background-size: cover;
     height: 40px;
     width: 40px;
@@ -265,7 +265,7 @@ a:active { text-decoration: none; }
   /*linkedin*/
   .linkedin {
     background: none;
-    background-image: url("linkedin_icon.png");
+    background-image: url("Assets/linkedin_icon.png");
     background-size: cover;
     height: 40px;
     width: 40px;
@@ -282,7 +282,7 @@ a:active { text-decoration: none; }
     content: attr(data-item);
     transition: 0.5s;
     background: none;
-    background-image: url("linkedin_purple.png");
+    background-image: url("Assets/linkedin_purple.png");
     background-size: cover;
     height: 40px;
     width: 40px;
@@ -306,7 +306,7 @@ a:active { text-decoration: none; }
   /*github*/
   .github {
     background: none;
-    background-image: url("github_logo.png");
+    background-image: url("Assets/github_logo.png");
     background-size: cover;
     height: 40px;
     width: 40px;
@@ -323,7 +323,7 @@ a:active { text-decoration: none; }
     content: attr(data-item);
     transition: 0.5s;
     background: none;
-    background-image: url("github_purple.png");
+    background-image: url("Assets/github_purple.png");
     background-size: cover;
     height: 40px;
     width: 40px;
