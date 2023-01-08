@@ -1,0 +1,325 @@
+@font-face {
+    font-family: Titillium;
+    src: url(TitilliumWeb-Regular.ttf);
+  }
+
+h1 {
+    font-size: 50;
+}
+
+body {
+  text-align: center;
+  font-family: 'Titillium';
+  background-image: url(projects_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0px;
+}
+
+.modal-button {
+  cursor: pointer;
+  background-color: whitesmoke;
+  position: relative;
+  font-family: 'Titillium';
+  font-size: 20;
+  margin-left: 30px;
+  margin-right: 30px;
+  border-radius: 56px;
+  width: 320;
+  height: 80;
+}
+
+video{
+  padding: 5px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: absolute; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 20px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-header {
+    padding: 2px 16px;
+    background-color: #bfb2f3;
+    color: white;
+  }
+  
+  .modal-body {
+    padding: 2px 16px;
+    text-align: left
+  }
+  
+  .modal-footer {
+    padding: 2px 16px;
+    background-color: #bfb2f3;
+    color: white;
+  }
+
+
+  /*nav bar*/
+  /*code based on: https://codepen.io/grohit/pen/jObGzdG */
+  nav {
+    background: #fff; /*used to be #f9f9f9*/
+    display: cover;
+
+  }
+  nav .menuItems {
+    list-style: none;
+    display: flex;
+    margin: 0px;
+    
+  }
+  nav .menuItems li {
+    margin: 10px;
+  }
+  nav .menuItems li a {
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    font-family: Titillium;
+    font-weight: 400;
+    transition: all 0.25s ease-in-out;
+    position: relative;
+    text-transform: uppercase;
+    margin-right: 60px;
+    margin-bottom: 0px;
+  }
+  nav .menuItems li a::before {
+    content: attr(data-item);
+    transition: 0.5s;
+    color: #ac82f7;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 0;
+    overflow: hidden;
+  }
+  nav .menuItems li a:hover::before {
+    width: 100%;
+    transition: all 0.25s ease-in-out;
+  }
+
+  /*footer*/
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+    color: white;
+    text-align: center;
+  }
+
+  /*email*/
+  .email {
+    background: none;
+    background-image: url("email_icon.png");
+    background-size: cover;
+    height: 40px;
+    width: 40px;
+    border: none;
+    margin: 5px;
+
+    position: relative;
+    content: "";
+    transition: all 0.5s ease-in-out;
+  }
+
+  .email:before {
+    cursor: pointer;
+    content: attr(data-item);
+    transition: 0.5s;
+    background: none;
+    background-image: url("email_purple.png");
+    background-size: cover;
+    height: 40px;
+    width: 40px;
+    border: none;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 0;
+    overflow: hidden;
+  }
+
+  .email:hover:before {
+    width: 100%;
+    transition: all 0.25s ease-in-out;
+  }
+
+    /*email*/
+  .email {
+    background: none;
+    background-image: url("email_icon.png");
+    background-size: cover;
+    height: 40px;
+    width: 40px;
+    border: none;
+    margin: 5px;
+
+    position: relative;
+    content: "";
+    transition: all 0.5s ease-in-out;
+  }
+
+  .email:before {
+    cursor: pointer;
+    content: attr(data-item);
+    transition: 0.5s;
+    background: none;
+    background-image: url("email_purple.png");
+    background-size: cover;
+    height: 40px;
+    width: 40px;
+    border: none;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 0;
+    overflow: hidden;
+  }
+
+  .email:hover:before {
+    width: 100%;
+    transition: all 0.25s ease-in-out;
+  }
+
+  /*linkedin*/
+  .linkedin {
+    background: none;
+    background-image: url("linkedin_icon.png");
+    background-size: cover;
+    height: 40px;
+    width: 40px;
+    border: none;
+    margin: 5px;
+
+    position: relative;
+    content: "";
+    transition: all 0.5s ease-in-out;
+  }
+
+  .linkedin:before {
+    cursor: pointer;
+    content: attr(data-item);
+    transition: 0.5s;
+    background: none;
+    background-image: url("linkedin_purple.png");
+    background-size: cover;
+    height: 40px;
+    width: 40px;
+    border: none;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 0;
+    overflow: hidden;
+  }
+
+  .linkedin:hover:before {
+    width: 100%;
+    transition: all 0.25s ease-in-out;
+  }
+
+
+  /*github*/
+  .github {
+    background: none;
+    background-image: url("github_logo.png");
+    background-size: cover;
+    height: 40px;
+    width: 40px;
+    border: none;
+    margin: 5px;
+
+    position: relative;
+    content: "";
+    transition: all 0.5s ease-in-out;
+  }
+
+  .github:before {
+    cursor: pointer;
+    content: attr(data-item);
+    transition: 0.5s;
+    background: none;
+    background-image: url("github_purple.png");
+    background-size: cover;
+    height: 40px;
+    width: 40px;
+    border: none;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 0;
+    overflow: hidden;
+  }
+
+  .github:hover:before {
+    width: 100%;
+    transition: all 0.25s ease-in-out;
+  }

@@ -1,0 +1,126 @@
+<html>
+    <head>
+        <title>Projects</title>
+        <link href='style_projects.css' rel='stylesheet'>
+        <link rel="shortcut icon" type="image/jpg" href="logo.png"/>
+    </head>
+
+    <section>
+        <nav>
+          <ul class="menuItems">
+            <li><a href='index.html' data-item='Home'>Home</a></li>
+            <li><a href='aboutme.html' data-item='About'>About</a></li>
+            <li><a href='projects.html' data-item='Projects'>Projects</a></li>
+          </ul>
+        </nav>
+      
+      </section>
+
+    <body>
+        <h1>Projects</h1>
+        <br> <br>
+        <!-- modal box from: https://www.w3schools.com/tags/tag_center.asp-->
+        <!-- adapter with: https://stackoverflow.com/questions/40645032/creating-multiple-modals-on-a-single-page-->
+
+        <!-- Modal 1 - Wordle Solver-->
+        <!-- Trigger/Open The Modal -->
+        <button class="modal-button" id = "wordle" href="#myModal1">Wordle Solver</button>
+        <button class="modal-button" id = "soccer" href="#myModal2">Soccer Game Scheduler</button>
+        <button class="modal-button" id = "piggy" href="#myModal3">Piggy Game</button>
+
+        <!-- The Modal -->
+        <div id="myModal1" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+            <span class="close">×</span>
+            <h2>Wordle Solver</h2>
+            </div>
+            <video height="337.50" controls>
+                <source src="Wordle recording.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="modal-body">
+            <h3>Technologies: Java, iterator pattern, Java Swing</h3>
+            <p> A desktop application that generates the correct solution to Wordle within the guess limit.
+                The program uses the iterator pattern to a 5000 word collection based on user feedback, while accounting for duplicate letters in words, to suggest the user’s next Wordle move.
+                It features a GUI with a popup panel and interactive colour changing buttons to facilitate user feedback.
+            </p>
+            </div>
+            <div class="modal-footer">
+            <h3>Check out the code: <a href="https://github.com/isa-leroux448/WordleSolver">https://github.com/isa-leroux448/WordleSolver</a></h3>
+            </div>
+        </div>
+
+        </div>
+
+        <!-- Modal 2 - Soccer Game Scheduler-->
+
+        <!-- The Modal -->
+        <div id="myModal2" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+            <span class="close">×</span>
+            <h2>Soccer Game Scheduler</h2>
+            </div>
+            <video height="337.50" controls>
+                <source src="Soccer_app.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="modal-body">
+            <h3>Technologies: Java, JUnit, org.json library, Java Swing</h3>
+            <p>A desktop application that can create player profiles, create and report game events, and view team, game and player statistics. 
+               The program also includes data persistence, allowing the user to save and load player, team and game data.
+               It also features a GUI interface with tabs, dropdown menus and tables.
+            </p>
+            </div>
+            <div class="modal-footer">
+            <h3>Check out the code: <a href="https://github.com/isa-leroux448/SoccerGameScheduler">https://github.com/isa-leroux448/SoccerGameScheduler</a></h3>
+            </div>
+            </div>
+        </div>
+
+        </div>
+
+        <!-- Modal 3 - Piggy Game-->
+
+        <!-- The Modal -->
+        <div id="myModal3" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+            <span class="close">×</span>
+            <h2>Piggy Game</h2>
+            </div>
+            <video width="600" height="337.50" controls>
+                <source src="PiggyGameDemo.mov" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="modal-body">
+                <h3>Technologies: Python, Pygame</h3>
+            <p>A game where the player controls a pig character and is tasked to collect randomly generated donuts while avoiding chicken enemies with various movement patterns.
+                The game features a menu, customized graphics, sound effects and a highscore feature. 
+                <br>
+                *The UI is written in French as I was attending a francophone school at the time of development. 
+            </p>
+            </div>
+            <div class="modal-footer">
+            <h3>Check out the code: <a href="https://github.com/isa-leroux448/PiggyGame">https://github.com/isa-leroux448/PiggyGame</a></h3>
+            </div>
+            </div>
+            </div>
+        </div>
+        </div>
+        <div class="footer">
+            <a href="mailto:isabella_leroux@yahoo.ca"><button class="email"><span></span></button></a>
+             <a href="https://www.linkedin.com/in/isabella-leroux-3b4a52221"><button class="linkedin"><span></span></button></a>
+            <a href="https://github.com/isa-leroux448"><button class="github"><span></span></button></a>
+            </div>
+
+        <script src="script_modal1.js"></script>
+    </body>
+</html>

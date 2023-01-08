@@ -1,0 +1,377 @@
+@font-face {
+    font-family: Titillium;
+    src: url(TitilliumWeb-Regular.ttf);
+  }
+
+h1 {
+    font-size: 50;
+}
+
+body {
+  overflow-y: auto;
+  text-align: center;
+  font-family: 'Titillium';
+  background-image: url(about_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0px;
+}
+
+.about-me {
+  background-color: white;
+  opacity: 0.75;
+  position: absolute;
+  top: 100px;
+  left: 150px;
+  right: 150px;
+  border-radius: 25px;
+}
+
+p {
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 5px;
+  font-size: 22px;
+  opacity: 1 !important;
+}
+
+h2 {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.circle {
+  border-radius: 50px;
+  border: 0px;
+  height: 100px;
+  width: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 25px;
+  font-weight: black;
+  color: transparent;
+  font-size: 20px;
+  font-family: Titillium;
+}
+
+.circle:hover {
+  background-image: none !important;
+  background-color: gainsboro;
+  /*filter: brightness(165%);*/
+  color: black;
+}
+
+#java {
+  background-image: url(java.png);
+  background-size: cover;
+}
+
+#python {
+  background-image: url(python.png);
+  background-size: cover;
+}
+
+#c {
+  background-image: url(c.png);
+  background-size: cover;
+}
+
+#html {
+  background-image: url(html.png);
+  background-size: cover;
+}
+
+#css {
+  background-image: url(css.png);
+  background-size: cover;
+}
+
+#jira {
+  background-image: url(jira.png);
+  background-size: cover;
+}
+
+#github {
+  background-image: url(github.png);
+  background-size: cover;
+}
+
+#figma {
+  background-image: url(figma.png);
+  background-size: cover;
+}
+
+#arc {
+  background-image: url(arc.png);
+  background-size: cover;
+}
+
+.circles {
+  white-space: nowrap;
+  padding-bottom: 100px;
+}
+
+.circles > div {
+  display: inline-block;
+}
+
+
+/*button effect*/
+.link1 {
+  position: relative;
+  margin-left: 30px;
+  margin-right: 30px;
+  padding: 9px 15px;
+  top: 25%;
+  border-radius: 28px;
+  width: 250;
+  height: 50px;
+  background: #f9f9f9;
+  content: "";
+  transition: all 0.5s ease-in-out;
+  font-family: Titillium;
+  color: black;
+}
+
+.link1 span {
+  position: relative;
+  font-size: 22;
+  line-height: 18px;
+  font-weight: 900;
+}
+
+.link1:before {
+  content: attr(data-item);
+  transition: 0.5s;
+  border-radius: 28px;
+  background: rgb(130, 84, 255, 0.5);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 0;
+  overflow: hidden;
+}
+
+.link1:hover:before {
+  width: 100%;
+  transition: all 0.25s ease-in-out;
+}
+
+  /*nav bar*/
+  /*code based on: https://codepen.io/grohit/pen/jObGzdG */
+  nav {
+    background: #fff; /*used to be #f9f9f9*/
+    display: cover;
+
+  }
+  nav .menuItems {
+    list-style: none;
+    display: flex;
+    margin: 0px;
+    
+  }
+  nav .menuItems li {
+    margin: 10px;
+  }
+  nav .menuItems li a {
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    font-family: Titillium;
+    font-weight: 400;
+    transition: all 0.25s ease-in-out;
+    position: relative;
+    text-transform: uppercase;
+    margin-right: 60px;
+    margin-bottom: 0px;
+  }
+  nav .menuItems li a::before {
+    content: attr(data-item);
+    transition: 0.5s;
+    color: #ac82f7;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 0;
+    overflow: hidden;
+  }
+  nav .menuItems li a:hover::before {
+    width: 100%;
+    transition: all 0.25s ease-in-out;
+  }
+
+  /*footer*/
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+    color: white;
+    text-align: center;
+  }
+
+  /*email*/
+  .email {
+    background: none;
+    background-image: url("email_icon.png");
+    background-size: cover;
+    height: 40px;
+    width: 40px;
+    border: none;
+    margin: 5px;
+
+    position: relative;
+    content: "";
+    transition: all 0.5s ease-in-out;
+  }
+
+  .email:before {
+    cursor: pointer;
+    content: attr(data-item);
+    transition: 0.5s;
+    background: none;
+    background-image: url("email_purple.png");
+    background-size: cover;
+    height: 40px;
+    width: 40px;
+    border: none;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 0;
+    overflow: hidden;
+  }
+
+  .email:hover:before {
+    width: 100%;
+    transition: all 0.25s ease-in-out;
+  }
+
+    /*email*/
+  .email {
+    background: none;
+    background-image: url("email_icon.png");
+    background-size: cover;
+    height: 40px;
+    width: 40px;
+    border: none;
+    margin: 5px;
+
+    position: relative;
+    content: "";
+    transition: all 0.5s ease-in-out;
+  }
+
+  .email:before {
+    cursor: pointer;
+    content: attr(data-item);
+    transition: 0.5s;
+    background: none;
+    background-image: url("email_purple.png");
+    background-size: cover;
+    height: 40px;
+    width: 40px;
+    border: none;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 0;
+    overflow: hidden;
+  }
+
+  .email:hover:before {
+    width: 100%;
+    transition: all 0.25s ease-in-out;
+  }
+
+  /*linkedin*/
+  .linkedin {
+    background: none;
+    background-image: url("linkedin_icon.png");
+    background-size: cover;
+    height: 40px;
+    width: 40px;
+    border: none;
+    margin: 5px;
+
+    position: relative;
+    content: "";
+    transition: all 0.5s ease-in-out;
+  }
+
+  .linkedin:before {
+    cursor: pointer;
+    content: attr(data-item);
+    transition: 0.5s;
+    background: none;
+    background-image: url("linkedin_purple.png");
+    background-size: cover;
+    height: 40px;
+    width: 40px;
+    border: none;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 0;
+    overflow: hidden;
+  }
+
+  .linkedin:hover:before {
+    width: 100%;
+    transition: all 0.25s ease-in-out;
+  }
+
+
+  /*github*/
+  .github {
+    background: none;
+    background-image: url("github_logo.png");
+    background-size: cover;
+    height: 40px;
+    width: 40px;
+    border: none;
+    margin: 5px;
+
+    position: relative;
+    content: "";
+    transition: all 0.5s ease-in-out;
+  }
+
+  .github:before {
+    cursor: pointer;
+    content: attr(data-item);
+    transition: 0.5s;
+    background: none;
+    background-image: url("github_purple.png");
+    background-size: cover;
+    height: 40px;
+    width: 40px;
+    border: none;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 0;
+    overflow: hidden;
+  }
+
+  .github:hover:before {
+    width: 100%;
+    transition: all 0.25s ease-in-out;
+  }
