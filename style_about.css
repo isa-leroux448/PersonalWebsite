@@ -91,6 +91,11 @@ h2 {
   background-size: cover;
 }
 
+#javascript {
+  background-image: url("Assets/javascript.png");
+  background-size: cover;
+}
+
 #github {
   background-image: url("Assets/github.png");
   background-size: cover;
